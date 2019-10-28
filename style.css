@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(font/Montserrat-Regular.ttf);
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0%;
+    font-family: Montserrat;
+    background-size: cover;
+    background-color: #E9E8BA;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 7%;
+    left: 50%;
+    height: 160px;
+    width: auto;
+    align-items: center;
+}
+
+.name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 40px;
+}
+
+.hr {
+    margin-top: -35px;
+}
+
+.slider {
+    color: #353839;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.slider div {
+    margin-bottom: 50px;
+    height: 50px;
+    font-weight: lighter;
+}
+
+@keyframes slide {
+    0% {margin-top: -300px;}
+    5% {margin-top: -200px;}
+    33% {margin-top: -200px;}
+    38% {margin-top: -100px;}
+    66% {margin-top: -100px;}
+    71% {margin-top: 0px;}
+    100% {margin-top: 0px;}
+}
+
+.slider1 {
+    animation: slide 5s linear infinite;
+}
+
+.social_media {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.social_media i {
+    margin-right: 10px;
+    color: black;
+}
+
+.social_media a {
+    text-decoration: none;
+}
+
+#insta:hover {
+    color: #E1306C;
+    transform: scale(1.4, 1.4);
+    transition-delay: 0s;
+}
+
+#github:hover {
+    color: #0f0f0f;
+    transform: scale(1.4, 1.4);
+    transition-delay: 0s;
+}
+
+#gmail:hover {
+    color: #c71610;
+    transform: scale(1.4, 1.4);
+    transition-delay: 0s;
+}
+
+#drums:hover {
+    color: #3e65cf;
+    transform: scale(1.4, 1.4);
+    transition-delay: 0s;
+}
