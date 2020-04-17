@@ -20,37 +20,49 @@ body {
 
 img {
     border-radius: 50%;
-    top: 27%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 160px;
+    max-height: 28vh;
+    /* 27 vh == 160 px */
     width: auto;
-    align-items: center;
-    position: absolute;
+    max-width: 15%;
+}
+
+.image {
+    top: 13%;
+    position: relative;
+    display: block;
+    margin: auto;
 }
 
 .name {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 7%;
+    position: relative;
+    display: block;
+    margin: auto;
+    width: auto;
     color: black;
-    font-size: 40px;
+    /* 40 px == 3 vw */
+}
+
+h1 {
+    font-size: 6.3vw;
 }
 
 .hr {
-    margin-top: -35px;
+    margin-top: -3%;
+    width: 47%;
 }
 
 .slider {
     color: #353839;
-    position: absolute;
-    left: 50%;
-    top: 72%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
+    position: relative;
+    display: block;
+    top: 11%;
+    margin: auto;
+    font-size: 2.3vw;
     overflow: hidden;
-    height: 50px;
+    width: auto;
+    height: 7vh;
+    /* 50 px == 10 vh */
 }
 
 .slider div {
@@ -74,11 +86,11 @@ img {
 }
 
 .social_media {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 40px;
+    position: relative;
+    top: 20%;
+    margin: auto;
+    display: block;
+    font-size: 3.2vw;
 }
 
 .social_media i {
@@ -113,3 +125,81 @@ img {
     transform: scale(1.4, 1.4);
     transition-delay: 0s;
 }
+
+@media screen and (max-width: 1000px) {
+    .name {
+        top: 12%;
+        position: relative;
+    }
+    .slider {
+        height: 5vh;
+        top: 15%;
+        font-size: 2.8vw;
+        position: relative;
+    }
+    .social_media {
+        top: 27%;
+        font-size: 4.3vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    img {
+        max-height: 32vh;
+        max-width: 20%;
+    }
+    h1 {
+        font-size: 8vw;
+    }
+    .slider {
+        font-size: 3.5vw;
+    }
+    .social_media {
+        font-size: 5vw;
+        top: 23%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        max-height: 37vh;
+        max-width: 25%;
+    }
+    h1 {
+        font-size: 8.5vw;
+    }
+    .hr {
+        width: 55%;
+    }
+    .slider {
+        font-size: 4vw;
+        height: 4.5vh;
+    }
+    .social_media {
+        font-size: 5.5vw;
+        top: 23%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    img {
+        max-height: 45vh;
+        max-width: 35%;
+    }
+    h1 {
+        font-size: 12vw;
+    }
+    .hr {
+        width: 70%;
+        margin-top: -4%;
+    }
+    .slider {
+        font-size: 5vw;
+        height: 3.5vh;
+    }
+    .social_media {
+        font-size: 7.5vw;
+
+    }
+}
+
