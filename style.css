@@ -120,12 +120,6 @@ h1 {
     transition-delay: 0s;
 }
 
-#drums:hover {
-    color: #16e16e;
-    transform: scale(1.4, 1.4);
-    transition-delay: 0s;
-}
-
 @media screen and (max-width: 1000px) {
     .name {
         top: 12%;
