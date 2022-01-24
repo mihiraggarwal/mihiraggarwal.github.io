@@ -60,11 +60,11 @@ img {
     margin-top: 9vh
 }
 
-.main_socials {
+.other_sites {
     margin-left: 4.75vw
 }
 
-.social {
+.sites {
     border: 1px solid #707070;
     border-radius: 4px;
     opacity: 1;
@@ -83,7 +83,7 @@ img {
     transition: background 0.2s ease-in-out
 } 
 
-.social:hover {
+.sites:hover {
     background-color: #000;
 }
 
@@ -119,7 +119,7 @@ p {
 }
 
 .title{
-    font-size: 4.4vw;
+    font-size: 4vw;
     margin-left: 4.8vw;
     line-height: 0;
     color: #fcfcfc
@@ -144,13 +144,12 @@ p {
 .extras {
     width: 4.5%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     text-align: center;
     float: left;
-    font-size: 2.2vw;
-    margin-top: 23vh;
+    font-size: 2vw;
+    margin-top: 12vh;
 }
 
 .extras i {
@@ -162,8 +161,38 @@ p {
     text-decoration: none;
 }
 
+#drums:hover {
+    color: #cd486b;
+    transition: color 0.1s ease-in-out
+}
+
+#github:hover {
+    color: #5b5959;
+    transition: color 0.1s ease-in-out
+}
+
+#instagram:hover {
+    color: #cd486b;
+    transition: color 0.1s ease-in-out
+}
+
 #spotify:hover {
     color: #16e16e;
+    transition: color 0.1s ease-in-out
+}
+
+#linkedin:hover {
+    color: #0077b5;
+    transition: color 0.1s ease-in-out
+}
+
+#facebook:hover {
+    color: #4267B2;
+    transition: color 0.1s ease-in-out
+}
+
+#twitter:hover {
+    color: #1DA1F2;
     transition: color 0.1s ease-in-out
 }
 
@@ -199,7 +228,7 @@ p {
         margin-top: 5vw
     }
 
-    .main_socials {
+    .other_sites {
         margin: 0;
         display: flex;
         flex-direction: row;
@@ -208,7 +237,7 @@ p {
         margin-top: 4vw
     }
 
-    .social {
+    .sites {
         margin-right: 2vw;
         margin-top: 0;
         height: 5vw;
