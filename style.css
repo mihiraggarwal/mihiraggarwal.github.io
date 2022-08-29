@@ -19,8 +19,8 @@ body {
     background-size: cover;
     /* background: #659dbd */
     /* background: #97caef */
-    background: #93A7A6
-    
+    background: #93A7A6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -109,6 +109,7 @@ a {
     float: left;
     width: 74%;
     margin-top: 8vh;
+    height: 80%;
 }
 
 p {
@@ -259,7 +260,8 @@ p {
 
     .right {
         width: 100%;
-        text-align: center;
+        height: 60%;
+        /* text-align: center; */
         margin: 0;
         margin-top: 5vw;
         padding-left: 10vw;
@@ -294,6 +296,7 @@ p {
         margin-top: 5vw;
         padding-left: 10vw;
         padding-right: 10vw;
+        padding-top: 5vw;
         margin-bottom: 0;
         display: block;
     }
@@ -325,5 +328,75 @@ p {
 
     .extras i {
         font-size: 4.5vw;
+    }
+}
+
+/* ================================================================= */
+
+.techmain {
+    margin-left: 4.8vw;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+    font-family: encode-sans;
+}
+
+.techcontainer {
+    height: 100%;
+    overflow-y: auto;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.techcontainer::-webkit-scrollbar {
+    width: 0 !important
+}
+
+.techbox {
+    border: 1px solid #707070;
+    border-radius: 5px;
+    margin-left: 4.8vw;
+    margin-bottom: 1vw;
+    color: #fcfcfc;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.techtitle {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+}
+
+.techdesc {
+    font-size: 1vw
+}
+
+.techtitle, .techdesc {
+    font-family: encode-sans;
+}
+
+.techbox i {
+    font-size: 2vw;
+    color: #fcfcfc;
+}
+
+@media screen and (max-width: 768px) {
+    .techmain {
+        margin-left: 0;
+        font-size: 4vw
+    }
+
+    .techbox {
+        margin-left: 0;
+    }
+
+    .techtitle {
+        font-size: 3vw;
+    }
+
+    .techdesc {
+        font-size: 2.3vw;
     }
 }
