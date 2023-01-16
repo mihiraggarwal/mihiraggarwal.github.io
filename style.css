@@ -1,6 +1,11 @@
 @font-face {
-    font-family: encode-sans;
-    src: url('font/EncodeSans-Regular.ttf');
+    font-family: poppins;
+    src: url('font/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: poppins-light;
+    src: url('font/Poppins-Light.ttf');
 }
 
 html {
@@ -69,7 +74,7 @@ img {
     border-radius: 4px;
     opacity: 1;
     margin-top: 0.45vw;
-    font-family: encode-sans;
+    font-family: poppins-light;
     background: #1C1C2A 0% 0% no-repeat padding-box;
     height: 2.7vw;
     width: 12.5vw;
@@ -113,7 +118,7 @@ a {
 }
 
 p {
-    font-family: encode-sans;
+    font-family: poppins-light;
     /* font-family: "Segoe UI"; */
     color: #fcfcfc;
     padding: 0;
@@ -127,7 +132,7 @@ p {
 }
 
 .content {
-    font-size: 1.25vw;
+    font-size: 1.20vw;
     margin-left: 4.8vw;
     margin-top: 1vh;
     margin-bottom: 3vh
@@ -337,7 +342,7 @@ p {
     margin-left: 4.8vw;
     font-size: 2.5vw;
     margin-bottom: 1vw;
-    font-family: encode-sans;
+    font-family: poppins;
 }
 
 .techcontainer {
@@ -374,7 +379,7 @@ p {
 }
 
 .techtitle, .techdesc {
-    font-family: encode-sans;
+    font-family: poppins-light;
 }
 
 .techbox i {
