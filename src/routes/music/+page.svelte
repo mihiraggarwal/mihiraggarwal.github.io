@@ -1,7 +1,7 @@
 <script>
     import Title from '$lib/components/Title.svelte';
     
-    let title = "mihir aggarwal"
+    let title = "music"
 </script>
 
 <Title bind:title={title}/>

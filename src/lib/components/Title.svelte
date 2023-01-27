@@ -3,7 +3,7 @@
 </script>
 
 <div class="title-container">
-    <div class="title">{title}</div>
+    <div contenteditable="true" class="title" bind:innerHTML={title}>{title}</div>
 </div>
 
 <style>
