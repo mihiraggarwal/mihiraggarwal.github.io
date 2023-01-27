@@ -29,7 +29,12 @@
 
     @font-face {
         src: url(font/AirbnbCerealBold.ttf);
-        font-family: "airbnb"
+        font-family: "airbnb-bold"
+    }
+
+    @font-face {
+        src: url(font/AirbnbCerealMedium.ttf);
+        font-family: "airbnb-medium"
     }
 
     .main {
@@ -37,7 +42,7 @@
         width: 100vw;
         display: flex;
         flex-direction: row;
-        font-family: "airbnb";
+        font-family: "airbnb-bold";
     }
 
     .left-container {
@@ -46,7 +51,7 @@
         flex: 1;
         display: flex;
         flex-direction: column;
-        padding-top: 6vh;
+        padding-top: 10vh;
         font-size: 8.5rem;
     }
     
@@ -55,7 +60,7 @@
         flex: 3;
         padding-left: 2.25vw;
         padding-right: 2.25vw;
-        padding-top: 6vh;
+        padding-top: 10vh;
     }
 
     img {
