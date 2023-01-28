@@ -10,9 +10,9 @@
     .title-container {
         box-shadow: 0 3px 1vw rgba(0, 0, 0, 0.1);
         border: none;
-        border-radius: 30px;
+        border-radius: 7.5px;
         height: 10vh;
-        font-size: 9rem;
+        font-size: 2.25rem;
         padding-left: 1.25vw;
         padding-right: 1.25vw;
         display: flex;

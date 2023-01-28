@@ -47,7 +47,7 @@
     }
 
     p {
-        font-size: 6rem;
+        font-size: 1.5rem;
         font-family: airbnb-medium;
     }
 </style>

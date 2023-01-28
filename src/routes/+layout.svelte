@@ -52,7 +52,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 10vh;
-        font-size: 8.5rem;
+        font-size: 2.125rem;
     }
     
     .right-container {
