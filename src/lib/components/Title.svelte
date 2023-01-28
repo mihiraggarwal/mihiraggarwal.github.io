@@ -14,7 +14,12 @@
         height: 10vh;
         font-size: 9rem;
         padding-left: 1.25vw;
+        padding-right: 1.25vw;
         display: flex;
         align-items: center;
+    }
+
+    .title {
+        width: 100%;
     }
 </style>
