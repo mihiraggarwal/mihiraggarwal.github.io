@@ -3,7 +3,6 @@
 </script>
 
 <svelte:head>
-    <script src="https://kit.fontawesome.com/b755d8149c.js" crossorigin="anonymous"></script>
     <title>Mihir Aggarwal</title>
     <meta name="author" content="Mihir Aggarwal">
     <meta name="description" content="Loose attempt at a portfolio website">
