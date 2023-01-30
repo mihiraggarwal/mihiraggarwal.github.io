@@ -52,6 +52,7 @@
         flex-direction: column;
         padding-top: 10vh;
         font-size: 2.125rem;
+        overflow-y: hidden;
     }
     
     .right-container {
@@ -60,6 +61,7 @@
         padding-left: 2.25vw;
         padding-right: 2.25vw;
         padding-top: 10vh;
+        overflow-y: scroll;
     }
 
     img {

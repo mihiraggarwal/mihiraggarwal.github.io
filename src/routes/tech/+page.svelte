@@ -5,5 +5,5 @@
     let title = "tech"
 </script>
 
-<Title {title}/>
+<Title bind:title={title}/>
 <Content {title} />

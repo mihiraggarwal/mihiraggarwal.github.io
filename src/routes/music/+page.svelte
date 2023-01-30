@@ -5,5 +5,5 @@
     let title = "music"
 </script>
 
-<Title {title}/>
+<Title bind:title={title}/>
 <Content {title} />
