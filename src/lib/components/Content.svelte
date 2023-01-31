@@ -1,4 +1,6 @@
 <script>
+    import { createEventDispatcher } from 'svelte';
+
     import Home from '$lib/components/body/Home.svelte'
     import Music from '$lib/components/body/Music.svelte'
     import Tech from '$lib/components/body/Tech.svelte'
@@ -6,7 +8,6 @@
     export let title
 
     let final
-    let content;
     $: if (["mihir aggarwal", "mihir", "mihiraggarwal", "home", "hello"].includes(title.toLowerCase())) {
         final = "home"
     }
@@ -20,13 +21,18 @@
         final = "random"
     }
 
+    let dispatch = createEventDispatcher()
+    const showModal = (_) => {
+        dispatch('show-modal', _)
+    }
+
 </script>
 
 <div class="content-container">
     {#if final === "home"}
         <Home />
     {:else if final === "music"}
-        <Music />
+        <Music on:show-modal={showModal}/>
     {:else if final === "tech"}
         <Tech />
     {:else}

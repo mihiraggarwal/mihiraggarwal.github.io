@@ -1,3 +1,13 @@
+<script>
+    import { createEventDispatcher } from "svelte";
+    import MusicSocial from "$lib/components/MusicSocial.svelte";
+
+    let dispatch = createEventDispatcher()
+    const showModal = (_) => {
+        dispatch('show-modal', _)
+    }
+</script>
+
 <p>Drummer / Audio engineer / Keyboardist</p>
 <div class="container">
     <div class="inner">
@@ -20,32 +30,27 @@
         </div>
     </div>
     <div class="outer">
-        <a href="https://instagram.com/mihir_drumzz" target="_blank" rel="noreferrer">
-            <div class="insta">
-                <div class="insta-one">
-                    <img class="drums-img" src="img/drums.jpg" alt="drums">
-                    <div class="insta-one-inside">
-                        <div class="insta-title">@mihir_drumzz</div>
-                        <a href="https://instagram.com/mihir_drumzz" target="_blank" rel="noreferrer">
-                            <i class="fab fa-instagram" id="insta"></i>
-                        </a>
-                    </div>
+        <MusicSocial url={"https://instagram.com/mihir_drumzz"} main_img={"drums"} main_alt={"drums"} main_title={"@mihir_drumzz"} main_href={"http://instagram.com/mihir_drumzz"} main_i={"fab fa-instagram"} main_id={"insta"}/>
+        
+        <div class="msocials" on:click={showModal}>
+            <div class="msocials-one">
+                <div class="msocials-title">Portfolio</div>
+            </div>
+            <div class="msocials-pics">
+                <div class="msocials-two">
+                    <img src="img/pfp.jpg" alt="pfp">
+                    <img src="img/pfp.jpg" alt="pfp">
+                    <img src="img/pfp.jpg" alt="pfp">
                 </div>
-                <div class="insta-pics">
-                    <div class="insta-two">
-                        <img src="img/pfp.jpg" alt="pfp">
-                        <img src="img/pfp.jpg" alt="pfp">
-                        <img src="img/pfp.jpg" alt="pfp">
-                    </div>
-                    <div class="insta-three">
-                        <img src="img/pfp.jpg" alt="pfp">
-                        <img src="img/pfp.jpg" alt="pfp">
-                        <img src="img/pfp.jpg" alt="pfp">
-                    </div>
+                <div class="msocials-three">
+                    <img src="img/pfp.jpg" alt="pfp">
+                    <img src="img/pfp.jpg" alt="pfp">
+                    <img src="img/pfp.jpg" alt="pfp">
                 </div>
             </div>
-        </a>
-        <div class="photos"></div>
+        </div>
+
+        <MusicSocial url={"https://www.youtube.com/channel/UCZ4MHhniF3FYdVzS-MsQ89w"} main_img={"drums-2"} main_alt={"drums"} main_title={"Mihir Aggarwal"} main_href={"https://www.youtube.com/channel/UCZ4MHhniF3FYdVzS-MsQ89w"} main_i={"fab fa-youtube"} main_id={"youtube"}/>
     </div>
 </div>
 
@@ -83,15 +88,15 @@
         margin-top: 2vh;
     }
 
-    .insta, .photos {
-        height: 11em;
+    .msocials {
+        height: 12em;
         padding: 1vh;
-        width: 12em;
+        width: 13em;
         background-color: #272727;
         border: 1px solid #272727;
     }
 
-    .insta {
+    .msocials {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -99,63 +104,47 @@
         flex-wrap: wrap;
     }
 
-    .insta-one, .insta-two, .insta-three{
+    .msocials-one, .msocials-two, .msocials-three {
         display: flex;
         width: 100%;
     }
 
-    .insta-pics {
+    .msocials-pics {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
     }
 
-    .drums-img {
-        border-radius: 50%;
-        width: 15%
-    }
-
-    .insta-one {
+    .msocials-one {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-top: 1vh
+        height: 23%
     }
 
-    .insta-one-inside {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    i {
-        color: #f7f7f7
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    .insta-one div {
+    .msocials-one div {
         color: #f7f7f7;
     }
 
-    .insta-two {
+    .msocials-two {
         margin-bottom: 1vh;
     }
 
-    .insta-two, .insta-three {
+    .msocials-two, .msocials-three {
         justify-content: space-between;
     }
 
-    .insta-title {
-        font-size: 1rem;
-        margin-left: 1vw;
+    .msocials-title {
+        font-size: 1.5rem;
+        display: block;
+        margin: auto;
     }
 
     img {
         width: 32%;
+    }
+
+    .msocials:hover {
+        cursor: pointer;
     }
 </style>
