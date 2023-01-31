@@ -19,25 +19,16 @@
                 </a>
             </div>
         </div>
-        <div class="msocials-pics">
-            <div class="msocials-two">
-                <img src="img/pfp.jpg" alt="pfp">
-                <img src="img/pfp.jpg" alt="pfp">
-                <img src="img/pfp.jpg" alt="pfp">
-            </div>
-            <div class="msocials-three">
-                <img src="img/pfp.jpg" alt="pfp">
-                <img src="img/pfp.jpg" alt="pfp">
-                <img src="img/pfp.jpg" alt="pfp">
-            </div>
-        </div>
     </div>
 </a>
 
 <style>
     .msocials {
-        height: 12em;
-        padding: 1vh;
+        padding-top: 1.5vh;
+        padding-bottom: 1.5vh;
+        padding-left: 1.5vh;
+        padding-right: 3vh;
+        border-radius: 5px;
         width: 13em;
         background-color: #272727;
         border: 1px solid #272727;
@@ -51,17 +42,11 @@
         flex-wrap: wrap;
     }
 
-    .msocials-one, .msocials-two, .msocials-three {
+    .msocials-one {
         display: flex;
         width: 100%;
     }
-
-    .msocials-pics {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
+    
     .drums-img {
         border-radius: 50%;
         width: 15%
@@ -71,7 +56,6 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        margin-top: 1vh
     }
 
     .msocials-one-inside {
@@ -95,20 +79,8 @@
         color: #f7f7f7;
     }
 
-    .msocials-two {
-        margin-bottom: 1vh;
-    }
-
-    .msocials-two, .msocials-three {
-        justify-content: space-between;
-    }
-
     .msocials-title {
         font-size: 1rem;
         margin-left: 1vw;
-    }
-
-    img {
-        width: 32%;
     }
 </style>

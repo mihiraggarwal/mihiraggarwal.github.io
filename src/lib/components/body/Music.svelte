@@ -33,21 +33,7 @@
         <MusicSocial url={"https://instagram.com/mihir_drumzz"} main_img={"drums"} main_alt={"drums"} main_title={"@mihir_drumzz"} main_href={"http://instagram.com/mihir_drumzz"} main_i={"fab fa-instagram"} main_id={"insta"}/>
         
         <div class="msocials" on:click={showModal}>
-            <div class="msocials-one">
-                <div class="msocials-title">Portfolio</div>
-            </div>
-            <div class="msocials-pics">
-                <div class="msocials-two">
-                    <img src="img/pfp.jpg" alt="pfp">
-                    <img src="img/pfp.jpg" alt="pfp">
-                    <img src="img/pfp.jpg" alt="pfp">
-                </div>
-                <div class="msocials-three">
-                    <img src="img/pfp.jpg" alt="pfp">
-                    <img src="img/pfp.jpg" alt="pfp">
-                    <img src="img/pfp.jpg" alt="pfp">
-                </div>
-            </div>
+                <div class="msocials-title">Portfolio shots</div>
         </div>
 
         <MusicSocial url={"https://www.youtube.com/channel/UCZ4MHhniF3FYdVzS-MsQ89w"} main_img={"drums-2"} main_alt={"drums"} main_title={"Mihir Aggarwal"} main_href={"https://www.youtube.com/channel/UCZ4MHhniF3FYdVzS-MsQ89w"} main_i={"fab fa-youtube"} main_id={"youtube"}/>
@@ -89,59 +75,26 @@
     }
 
     .msocials {
-        height: 12em;
         padding: 1vh;
         width: 13em;
         background-color: #272727;
         border: 1px solid #272727;
+        border-radius: 5px;
     }
 
     .msocials {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
         align-items: stretch;
         flex-wrap: wrap;
-    }
-
-    .msocials-one, .msocials-two, .msocials-three {
-        display: flex;
-        width: 100%;
-    }
-
-    .msocials-pics {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-
-    .msocials-one {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 23%
-    }
-
-    .msocials-one div {
-        color: #f7f7f7;
-    }
-
-    .msocials-two {
-        margin-bottom: 1vh;
-    }
-
-    .msocials-two, .msocials-three {
-        justify-content: space-between;
     }
 
     .msocials-title {
         font-size: 1.5rem;
         display: block;
         margin: auto;
-    }
-
-    img {
-        width: 32%;
+        color: #f7f7f7;
     }
 
     .msocials:hover {
