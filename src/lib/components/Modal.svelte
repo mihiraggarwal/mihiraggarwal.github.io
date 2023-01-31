@@ -1,6 +1,8 @@
 <script>
     import { createEventDispatcher } from "svelte";
 
+    const portfolio = [...Array(19).keys()].slice(1)
+
     let dispatch = createEventDispatcher()
     const showMusic = (_) => {
         dispatch("show-music", _)
@@ -9,12 +11,11 @@
 
 <i class="fa fa-arrow-left" on:click={showMusic}></i>
 <div class="modal">
-    <img src="img/pfp.jpg" alt="img">
-    <img src="img/pfp.jpg" alt="img">
-    <img src="img/pfp.jpg" alt="img">
-    <img src="img/pfp.jpg" alt="img">
-    <img src="img/pfp.jpg" alt="img">
-    <img src="img/pfp.jpg" alt="img">
+    {#each portfolio as n}
+        <div class="img-container">
+            <img src="img/portfolio-{n}.jpg" alt="drums-img">
+        </div>
+    {/each}
 </div>
 
 <style>
@@ -26,9 +27,16 @@
         flex-wrap: wrap;
     }
 
-    img {
-        width: 32%;
+    .img-container {
+        background-color: #f7f7f7;
+        border: 5px solid #272727;
         margin-bottom: 2vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    img {
+        width: 320px;
     }
 
     i {
