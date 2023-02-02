@@ -73,4 +73,16 @@
         margin-bottom: 10vh
     }
 
+    @media screen and (max-width: 768px) {
+        .left-container {
+            flex: 0;
+        }
+
+        .right-container {
+            padding-top: 5vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+    }
+
 </style>

@@ -4,6 +4,7 @@
 
 <div class="title-container">
     <div contenteditable="true" class="title" bind:innerHTML={title}>{title}</div>
+    <i class="fa fa-bars"></i>
 </div>
 
 <style>
@@ -21,5 +22,22 @@
 
     .title {
         width: 100%;
+    }
+
+    i {
+        visibility: hidden;
+        width: 0
+    }
+
+    @media screen and (max-width: 768px) {
+        i {
+            width: auto;
+            visibility: visible;
+        }
+
+        .title-container {
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
     }
 </style>

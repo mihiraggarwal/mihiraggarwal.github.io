@@ -67,7 +67,7 @@
 
 <style>
     .content-container {
-        margin-top: 7vh;
+        margin-top: 5vh;
     }
 
     p {
