@@ -1,5 +1,8 @@
 <script>
+    import { hamburger } from "$lib/components/body/stores.js"
     import NavElement from "$lib/components/NavElement.svelte";
+
+    $: ham = $hamburger
 </script>
 
 <svelte:head>
@@ -9,7 +12,7 @@
 </svelte:head>
 
 <div class="main">
-    <div class="left-container">
+    <div class="left-container" class:left-hamburger={ham}>
         <img src="img/pfp.jpg" alt="pfp">
         <div class='sites-nav'>
             <NavElement text="home" anchor="/" />
@@ -19,7 +22,7 @@
         </div>
     </div>
 
-    <div class="right-container">
+    <div class="right-container" class:right-hamburger={ham}>
         <slot />
     </div>
 </div>
@@ -82,6 +85,21 @@
             padding-top: 5vh;
             padding-left: 5vw;
             padding-right: 5vw;
+        }
+
+        .left-hamburger {
+            flex: 3
+        }
+
+        .right-hamburger {
+             flex: 0;
+             width: 100%;
+             display: none;
+             visibility: hidden;
+        }
+
+        img {
+            width: 35vw;
         }
     }
 

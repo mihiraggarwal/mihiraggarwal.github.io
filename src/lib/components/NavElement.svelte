@@ -1,10 +1,15 @@
 <script>
+    import { hamburger } from "$lib/components/body/stores";
     export let text;
     export let anchor;
+
+    const closeHam = () => {
+        hamburger.update(c => false)
+    }
 </script>
 
 <div class='sites'>
-    <a href={anchor}>
+    <a href={anchor} on:click={closeHam}>
         {text}
     </a>
 </div>

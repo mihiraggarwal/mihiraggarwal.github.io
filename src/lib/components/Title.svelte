@@ -1,10 +1,15 @@
 <script>
+    import { hamburger } from "$lib/components/body/stores"
     export let title;
+    
+    const showHam = (_) => {
+        hamburger.update(c => !c)
+    }
 </script>
 
 <div class="title-container">
     <div contenteditable="true" class="title" bind:innerHTML={title}>{title}</div>
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars" on:click={showHam}></i>
 </div>
 
 <style>
@@ -37,7 +42,7 @@
 
         .title-container {
             padding-left: 2vw;
-            padding-right: 2vw;
+            padding-right: 5vw;
         }
     }
 </style>
