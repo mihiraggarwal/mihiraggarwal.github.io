@@ -32,7 +32,6 @@
         padding-bottom: 1vh;
         padding-left: 1vw;
         padding-right: 1vw;
-        margin-right: 1vw;
     }
 
     .language div {

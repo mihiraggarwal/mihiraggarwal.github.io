@@ -39,6 +39,7 @@
         margin-bottom: 2vh;
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 1vw;
     }
 
     .repos {
@@ -49,10 +50,20 @@
         flex-wrap: wrap;
     }
 
+    a {
+        max-width: 49%;
+    }
+
     img {
-        max-width: 530px;
+        max-width: 100%;
         margin-bottom: 2vh;
         border-radius: 5px;
         opacity: 0.85;
+    }
+
+    @media screen and (max-width: 768px) {
+        a {
+            max-width: 100%;
+        }
     }
 </style>

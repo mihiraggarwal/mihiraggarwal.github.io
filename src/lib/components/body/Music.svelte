@@ -56,6 +56,7 @@
     .inner {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
     
     ul {
@@ -72,11 +73,13 @@
         flex-direction: row;
         justify-content: space-between;
         margin-top: 2vh;
+        flex-wrap: wrap;
+        gap: 2vh
     }
 
     .msocials {
         padding: 1vh;
-        width: 13em;
+        width: 14em;
         background-color: #272727;
         border: 1px solid #272727;
         border-radius: 5px;
