@@ -30,12 +30,12 @@
 <style>
 
     @font-face {
-        src: url(font/AirbnbCerealBold.ttf);
+        src: url(../../../font/AirbnbCerealBold.ttf);
         font-family: "airbnb-bold"
     }
 
     @font-face {
-        src: url(font/AirbnbCerealMedium.ttf);
+        src: url(../../../font/AirbnbCerealMedium.ttf);
         font-family: "airbnb-medium"
     }
 
