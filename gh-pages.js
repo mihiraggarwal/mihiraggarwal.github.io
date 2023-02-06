@@ -4,7 +4,7 @@ publish(
     "build",
     {
         branch: "gh-pages",
-        repo: "https://github.com/mihiraggarwal/mihiraggarwal.github.io",
+        repo: "https://github.com/mihiraggarwal/mihiraggarwal.github.io.git",
         user: {
             name: "mihiraggarwal",
             email: "mihir.aggarwal1000@gmail.com"
