@@ -4,7 +4,7 @@
     
     let languages = ["Node.js", "Python", "Android", "Vanilla.js", "Svelte"]
 
-    let repos = {"mihiraggarwal/select-gpt": "Vanilla.js", "mihiraggarwal/realtio-npm": "Vanilla.js", "mihiraggarwal/rollertoaster": "Node.js", "mihiraggarwal/spotify-permix": "Python", "mihiraggarwal/assist-co": "Android", "techsyndicate/encryptid-21": "Node.js", "mihiraggarwal/toi-notif": "Python", "mihiraggarwal/klear-app": "Android", "mihiraggarwal/quiz-platform": "Node.js", "techsyndicate/exun-21": "Node.js", "mihiraggarwal/riviore": "Android", "mihiraggarwal/tablot": "Python", "mihiraggarwal/mihiraggarwal.github.io": "Svelte", "mihiraggarwal/mockinv": "Python"}
+    let repos = {"mihiraggarwal/select-gpt": "Vanilla.js", "mihiraggarwal/realtio-npm": "Vanilla.js", "mihiraggarwal/rollertoaster": "Node.js", "mihiraggarwal/spotify-permix": "Python", "mihiraggarwal/assist-co": "Android", "techsyndicate/encryptid-21": "Node.js", "mihiraggarwal/toi-notif": "Python", "mihiraggarwal/klear-app": "Android", "mihiraggarwal/quiz-platform": "Node.js", "mihiraggarwal/decipher-backend": "Node.js", "techsyndicate/exun-21": "Node.js", "mihiraggarwal/riviore": "Android", "mihiraggarwal/tablot": "Python", "mihiraggarwal/mihiraggarwal.github.io": "Svelte", "mihiraggarwal/mockinv": "Python"}
 
     $: clang = $current
 </script>
