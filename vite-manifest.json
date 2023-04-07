@@ -3,137 +3,120 @@
     "file": "_app/immutable/assets/_layout-ed1ff831.css",
     "src": "src/routes/+layout.css"
   },
-  "src/routes/music/+page.css": {
-    "file": "_app/immutable/assets/_page-69e1cb6d.css",
-    "src": "src/routes/music/+page.css"
-  },
   "Content.css": {
-    "file": "_app/immutable/assets/Content-e82edeaf.css",
+    "file": "_app/immutable/assets/Content-a3ccac5d.css",
     "src": "Content.css"
   },
+  "_stores-22904aa3.js": {
+    "file": "_app/immutable/chunks/stores-22904aa3.js",
+    "imports": [
+      "_index-74b2ff11.js"
+    ]
+  },
   ".svelte-kit/generated/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-bcacf8b0.js",
+    "file": "_app/immutable/chunks/2-d110df84.js",
     "src": ".svelte-kit/generated/nodes/2.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-0955e8e4.js",
-    "src": ".svelte-kit/generated/nodes/1.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
-    ]
-  },
   ".svelte-kit/generated/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-c4616bbc.js",
+    "file": "_app/immutable/chunks/4-8e1102a1.js",
     "src": ".svelte-kit/generated/nodes/4.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/tech/+page.svelte"
     ]
   },
-  ".svelte-kit/generated/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-14d4fb12.js",
-    "src": ".svelte-kit/generated/nodes/0.js",
-    "isDynamicEntry": true,
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-017fc0dc.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
     "imports": [
-      "src/routes/+layout.svelte"
+      "_index-74b2ff11.js",
+      "_Content-ec0dd5ca.js"
+    ]
+  },
+  "_singletons-68d6f791.js": {
+    "file": "_app/immutable/chunks/singletons-68d6f791.js",
+    "imports": [
+      "_index-74b2ff11.js"
+    ]
+  },
+  "src/routes/music/+page.svelte": {
+    "file": "_app/immutable/components/pages/music/_page.svelte-ce2cbb25.js",
+    "src": "src/routes/music/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-74b2ff11.js",
+      "_Content-ec0dd5ca.js"
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-04b9a6e6.js",
+    "file": "_app/immutable/chunks/3-cfa4bb8f.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
       "src/routes/music/+page.svelte"
     ]
   },
-  "_stores-12f231a1.js": {
-    "file": "_app/immutable/chunks/stores-12f231a1.js",
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-a9db2adb.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-a8152e98.js"
+      "src/routes/+layout.svelte"
     ]
   },
   "src/routes/tech/+page.svelte": {
-    "file": "_app/immutable/components/pages/tech/_page.svelte-422cff9c.js",
+    "file": "_app/immutable/components/pages/tech/_page.svelte-be39c49e.js",
     "src": "src/routes/tech/+page.svelte",
     "isEntry": true,
     "imports": [
-      "_index-a8152e98.js",
-      "_Content-4ccebd15.js"
+      "_index-74b2ff11.js",
+      "_Content-ec0dd5ca.js"
     ]
   },
-  "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-9f7470c1.js",
-    "src": "src/routes/+page.svelte",
-    "isEntry": true,
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-c98ffd3c.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-a8152e98.js",
-      "_Content-4ccebd15.js"
+      "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-d0824706.js",
+    "file": "_app/immutable/components/error.svelte-14d0dcff.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-a8152e98.js",
-      "_singletons-5e61a26e.js"
+      "_index-74b2ff11.js",
+      "_singletons-68d6f791.js"
     ]
   },
-  "_singletons-5e61a26e.js": {
-    "file": "_app/immutable/chunks/singletons-5e61a26e.js",
-    "imports": [
-      "_index-a8152e98.js"
-    ]
-  },
-  "_index-a8152e98.js": {
-    "file": "_app/immutable/chunks/index-a8152e98.js"
+  "_index-74b2ff11.js": {
+    "file": "_app/immutable/chunks/index-74b2ff11.js"
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-626acdd9.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-d6e80688.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-a8152e98.js",
-      "_stores-12f231a1.js"
+      "_index-74b2ff11.js",
+      "_stores-22904aa3.js"
     ],
     "css": [
       "_app/immutable/assets/_layout-ed1ff831.css"
     ]
   },
-  "src/routes/music/+page.svelte": {
-    "file": "_app/immutable/components/pages/music/_page.svelte-2fa3403c.js",
-    "src": "src/routes/music/+page.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-a8152e98.js",
-      "_Content-4ccebd15.js"
-    ],
-    "css": [
-      "_app/immutable/assets/_page-69e1cb6d.css"
-    ]
-  },
-  "_Content-4ccebd15.js": {
-    "file": "_app/immutable/chunks/Content-4ccebd15.js",
-    "imports": [
-      "_index-a8152e98.js",
-      "_stores-12f231a1.js"
-    ],
-    "css": [
-      "_app/immutable/assets/Content-e82edeaf.css"
-    ]
-  },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-4d2619dd.js",
+    "file": "_app/immutable/start-fc3eda77.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-a8152e98.js",
-      "_singletons-5e61a26e.js"
+      "_index-74b2ff11.js",
+      "_singletons-68d6f791.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -141,6 +124,16 @@
       ".svelte-kit/generated/nodes/2.js",
       ".svelte-kit/generated/nodes/3.js",
       ".svelte-kit/generated/nodes/4.js"
+    ]
+  },
+  "_Content-ec0dd5ca.js": {
+    "file": "_app/immutable/chunks/Content-ec0dd5ca.js",
+    "imports": [
+      "_index-74b2ff11.js",
+      "_stores-22904aa3.js"
+    ],
+    "css": [
+      "_app/immutable/assets/Content-a3ccac5d.css"
     ]
   }
 }
