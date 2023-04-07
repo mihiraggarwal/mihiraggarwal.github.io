@@ -25,6 +25,7 @@
             <ul class="lower-list">
                 <li>Various TEDx Events from 2016 to 2019</li>
                 <li>Indian Institute of Management Ahmedabad, 2016</li>
+                <li>The Piano Man Jazz Club Gurgaon, 2023</li>
                 <li>Indo-Chine Resort, Phuket Thailand, New Year's Eve 2019</li>
             </ul>
         </div>
