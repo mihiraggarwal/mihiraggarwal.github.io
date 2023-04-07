@@ -62,7 +62,7 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         margin-top: 2vh;
         flex-wrap: wrap;
         gap: 2vh
