@@ -1,11 +1,5 @@
 <script>
-    import { createEventDispatcher } from "svelte";
     import MusicSocial from "$lib/components/MusicSocial.svelte";
-
-    let dispatch = createEventDispatcher()
-    const showModal = (_) => {
-        dispatch('show-modal', _)
-    }
 </script>
 
 <p>Drummer / Audio engineer / Keyboardist</p>
@@ -32,11 +26,7 @@
     </div>
     <div class="outer">
         <MusicSocial url={"https://instagram.com/mihir_drumzz"} main_img={"drums"} main_alt={"drums"} main_title={"@mihir_drumzz"} main_href={"http://instagram.com/mihir_drumzz"} main_i={"fab fa-instagram"} main_id={"insta"}/>
-        
-        <div class="msocials" on:click={showModal}>
-                <div class="msocials-title">Portfolio shots</div>
-        </div>
-
+        <MusicSocial url={"https://drive.google.com/drive/folders/1Vwh1mL6XjV82xHEDyclJoHiAbAGWySIX?usp=sharing"} main_img={"bob-8-1"} main_alt={"drums"} main_title={"Portfolio Shots"} main_id={"shots"}/>
         <MusicSocial url={"https://www.youtube.com/channel/UCZ4MHhniF3FYdVzS-MsQ89w"} main_img={"drums-2"} main_alt={"drums"} main_title={"Mihir Aggarwal"} main_href={"https://www.youtube.com/channel/UCZ4MHhniF3FYdVzS-MsQ89w"} main_i={"fab fa-youtube"} main_id={"youtube"}/>
     </div>
 </div>
@@ -76,32 +66,5 @@
         margin-top: 2vh;
         flex-wrap: wrap;
         gap: 2vh
-    }
-
-    .msocials {
-        padding: 1vh;
-        width: 14em;
-        background-color: #272727;
-        border: 1px solid #272727;
-        border-radius: 5px;
-    }
-
-    .msocials {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: stretch;
-        flex-wrap: wrap;
-    }
-
-    .msocials-title {
-        font-size: 1.5rem;
-        display: block;
-        margin: auto;
-        color: #f7f7f7;
-    }
-
-    .msocials:hover {
-        cursor: pointer;
     }
 </style>
