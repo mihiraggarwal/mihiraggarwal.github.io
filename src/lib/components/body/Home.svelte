@@ -1,6 +1,6 @@
 <script>
     let content_p1 = `
-    Hi, I'm Mihir, a freshman at Ashoka University. Although currently undeclared, I plan to pursue majors in Economics and Computer Science - an intersection I'm quite intrigued by.
+    Hi, I'm Mihir, a sophomore at Ashoka University. Although currently undeclared, I plan to pursue majors in Economics and Computer Science - an intersection I'm quite intrigued by.
     `
     let content_p2 = `
     I'm fascinated by tech and love using code to develop solutions for problems around me. I'm equally passionate about the latest in tech, and am constantly scouting for tools to experiment with.
