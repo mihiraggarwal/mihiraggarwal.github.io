@@ -2,9 +2,9 @@
     import Language from "$lib/components/Language.svelte";
     import { current } from "$lib/components/body/stores"
     
-    let languages = ["Node.js", "Python", "Android", "Vanilla.js", "Flutter", "Svelte", "Flask"]
+    let languages = ["Express.js", "Python", "Android", "Vanilla.js", "Flutter", "Svelte", "Flask", "Next.js"]
 
-    let repos = {"mihiraggarwal/select-gpt": "Vanilla.js", "mihiraggarwal/realtio-npm": "Vanilla.js", "mihiraggarwal/rollertoaster": "Node.js", "mihiraggarwal/spotify-permix": "Python", "mihiraggarwal/assist-co": "Android", "techsyndicate/encryptid-21": "Node.js", "rchtgpt/ctrl_freaks": "Flutter", "mihiraggarwal/toi-notif": "Python", "mihiraggarwal/klear-app": "Android", "mihiraggarwal/quiz-platform": "Node.js", "mihiraggarwal/decipher-backend": "Node.js", "techsyndicate/exun-21": "Node.js", "mihiraggarwal/carboscan": "Flask", "mihiraggarwal/riviore": "Android", "mihiraggarwal/tablot": "Python", "mihiraggarwal/mihiraggarwal.github.io": "Svelte", "mihiraggarwal/mockinv": "Python"}
+    let repos = {"mihiraggarwal/select-gpt": "Vanilla.js", "mihiraggarwal/realtio-npm": "Vanilla.js", "mihiraggarwal/rollertoaster": "Express.js", "mihiraggarwal/spotify-permix": "Python", "mihiraggarwal/assist-co": "Android", "techsyndicate/encryptid-21": "Express.js", "rchtgpt/ctrl_freaks": "Flutter", "mihiraggarwal/toi-notif": "Python", "mihiraggarwal/klear-app": "Android", "mihiraggarwal/quiz-platform": "Express.js", "mihiraggarwal/decipher-backend": "Express.js", "techsyndicate/exun-21": "Express.js", "mihiraggarwal/carboscan": "Flask", "mihiraggarwal/riviore": "Android", "Autumn-of-Code-Ashoka/roommate_matching": "Next.js", "mihiraggarwal/tablot": "Python", "mihiraggarwal/mihiraggarwal.github.io": "Svelte", "mihiraggarwal/mockinv": "Python"}
 
     $: clang = $current
 </script>
