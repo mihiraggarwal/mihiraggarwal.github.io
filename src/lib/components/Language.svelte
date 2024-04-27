@@ -19,8 +19,8 @@
     }
 </script>
 
-<div class="language" class:click={click}>
-    <div on:click={filterLang}>{language}</div>
+<div class="language" class:click={click} on:click={filterLang}>
+    <div>{language}</div>
 </div>
 
 <style>
