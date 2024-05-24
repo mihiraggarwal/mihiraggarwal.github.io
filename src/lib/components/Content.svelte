@@ -5,19 +5,25 @@
 
     export let title
 
+    const sbar = {
+        "home": ["mihir aggarwal", "mihir", "mihiraggarwal", "home", "hello"],
+        "tech": ["tech"],
+        "music": ["music"],
+    }
+
     let final
-    $: if (["mihir aggarwal", "mihir", "mihiraggarwal", "home", "hello"].includes(title.toLowerCase())) {
-        final = "home"
-    }
-    else if (title.toLowerCase() === "tech") {
-        final = "tech"
-    }
-    else if (title.toLowerCase() === "music") {
-        final = "music"
-    }
-    else {
-        final = "random"
-    }
+    let flag;
+
+    $: for (const k in sbar) {
+        flag = 0
+        if (sbar[k].includes(title.toLowerCase())) {
+            flag = 1
+            final = k
+            break
+        }
+    }; 
+
+    $: if (!flag) final = "random"
 </script>
 
 <div class="content-container">
