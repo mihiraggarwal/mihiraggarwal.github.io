@@ -6,9 +6,16 @@
     export let title
 
     const sbar = {
-        "home": ["mihir aggarwal", "mihir", "mihiraggarwal", "home", "hello"],
+        "home": ["mihir aggarwal", "mihir", "mihiraggarwal", "home", "hello", "me"],
         "tech": ["tech"],
         "music": ["music"],
+        "friends": ["friends"],
+        "insta": ["ig", "insta", "instagram"],
+        "github": ["gh", "github", "code"],
+        "linkedin": ["linkedin"],
+        "spotify": ["spotify"],
+        "telegram": ["tg", "telegram"],
+        "mail": ["mail", "gmail", "email"]
     }
 
     let final
@@ -24,6 +31,11 @@
     }; 
 
     $: if (!flag) final = "random"
+
+    const rdr = (link) => {
+        window.open(link, "_blank")
+        return "Redirecting..."
+    }
 </script>
 
 <div class="content-container">
@@ -33,6 +45,20 @@
         <Music />
     {:else if final === "tech"}
         <Tech />
+    {:else if final === "friends"}
+        <p>lol</p>
+    {:else if final === "insta"}
+        <p>{rdr("https://instagram.com/mihiraggarwall")}</p>
+    {:else if final === "github"}
+        <p>{rdr("https://github.com/mihiraggarwal")}</p>
+    {:else if final === "linkedin"}
+        <p>{rdr("https://www.linkedin.com/in/mihir-aggarwal/")}</p>
+    {:else if final === "spotify"}
+        <p>{rdr("https://open.spotify.com/user/obnhpzgvka1brmhv7wjyismih?si=a2b97169835443f0")}</p>
+    {:else if final === "telegram"}
+        <p>{rdr("https://t.me/mihiraggarwal")}</p>
+    {:else if final === "mail"}
+        <p>{rdr("mailto:mihir.aggarwal1000@gmail.com")}</p>
     {:else}
         <p>???</p>
     {/if}
