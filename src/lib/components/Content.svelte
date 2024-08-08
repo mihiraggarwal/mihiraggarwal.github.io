@@ -9,6 +9,7 @@
         "home": ["mihir aggarwal", "mihir", "mihiraggarwal", "home", "hello", "me"],
         "tech": ["tech"],
         "music": ["music"],
+        "resume": ["resume", "cv", "resumé"],
         "friends": ["friends"],
         "insta": ["ig", "insta", "instagram"],
         "github": ["gh", "github", "code"],
@@ -47,6 +48,8 @@
         <Tech />
     {:else if final === "friends"}
         <p>lol</p>
+    {:else if final === "resume"}
+        <p>{rdr("https://drive.google.com/file/d/1tNOujH84bdQ_IUFzH06oEEnXA8NGb4la/view?usp=sharing")}</p>
     {:else if final === "insta"}
         <p>{rdr("https://instagram.com/mihiraggarwall")}</p>
     {:else if final === "github"}

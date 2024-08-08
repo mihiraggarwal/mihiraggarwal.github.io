@@ -2,6 +2,7 @@
     import { hamburger } from "$lib/components/body/stores";
     export let text;
     export let anchor;
+    export let target = false;
 
     const closeHam = () => {
         hamburger.update(c => false)
@@ -9,7 +10,7 @@
 </script>
 
 <div class='sites'>
-    <a href={anchor} on:click={closeHam}>
+    <a href={anchor} on:click={closeHam} target={target ? "_blank" : ""}>
         {text}
     </a>
 </div>

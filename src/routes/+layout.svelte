@@ -18,7 +18,7 @@
             <NavElement text="home" anchor="/" />
             <NavElement text="tech" anchor="/tech" />
             <NavElement text="music" anchor="/music" />
-            <NavElement text="resumé" anchor="#" />
+            <NavElement text="resumé" anchor="https://drive.google.com/file/d/1tNOujH84bdQ_IUFzH06oEEnXA8NGb4la/view?usp=sharing" target={true} />
         </div>
     </div>
 
