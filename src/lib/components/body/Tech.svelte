@@ -2,9 +2,9 @@
     import Language from "$lib/components/Language.svelte";
     import { current } from "$lib/components/body/stores"
     
-    let languages = ["Express.js", "Python", "Android", "Vanilla.js", "Flutter", "Svelte", "Flask", "Next.js"]
+    let languages = ["Express.js", "Python", "Android", "Flutter", "Next.js", "Svelte", "Vanilla.js",  "Flask"]
 
-    let repos = {"mihiraggarwal/select-gpt": "Vanilla.js", "mihiraggarwal/realtio-npm": "Vanilla.js", "mihiraggarwal/nullity": "Python", "mihiraggarwal/rollertoaster": "Express.js", "mihiraggarwal/spotify-permix": "Python", "mihiraggarwal/assist-co": "Android", "techsyndicate/encryptid-21": "Express.js", "rchtgpt/ctrl_freaks": "Flutter", "mihiraggarwal/toi-notif": "Python", "mihiraggarwal/klear-app": "Android", "mihiraggarwal/quiz-platform": "Express.js", "mihiraggarwal/decipher-backend": "Express.js", "techsyndicate/exun-21": "Express.js", "mihiraggarwal/carboscan": "Flask", "mihiraggarwal/riviore": "Android", "Autumn-of-Code-Ashoka/roommate_matching": "Next.js", "mihiraggarwal/tablot": "Python", "mihiraggarwal/mihiraggarwal.github.io": "Svelte", "mihiraggarwal/mockinv": "Python"}
+    let repos = {"mihiraggarwal/game-practical": ["Svelte", "Python"], "mihiraggarwal/decision-experiment": ["Next.js", "Flask"], "mihiraggarwal/select-gpt": ["Vanilla.js"], "mihiraggarwal/memora": ["Flutter"], "mihiraggarwal/dialect": ["Express.js"], "mihiraggarwal/realtio-npm": ["Vanilla.js"], "mihiraggarwal/nullity": ["Python"], "mihiraggarwal/rollertoaster": ["Express.js"], "mihiraggarwal/spotify-permix": ["Python"], "mihiraggarwal/assist-co": ["Android"], "techsyndicate/encryptid-21": ["Express.js"], "mihiraggarwal/decipher-backend": ["Express.js"], "rchtgpt/ctrl_freaks": ["Flutter"], "mihiraggarwal/toi-notif": ["Python"], "mihiraggarwal/klear-app": ["Android"], "mihiraggarwal/quiz-platform": ["Express.js"], "techsyndicate/exun-21": ["Express.js"], "mihiraggarwal/carboscan": ["Flask"], "mihiraggarwal/riviore": ["Android"], "Autumn-of-Code-Ashoka/roommate_matching": ["Next.js"], "mihiraggarwal/tablot": ["Python"], "mihiraggarwal/mihiraggarwal.github.io": ["Svelte"], "mihiraggarwal/mockinv": ["Python"]}
 
     $: clang = $current
 </script>
@@ -19,14 +19,14 @@
     {#if !clang}
         {#each Object.entries(repos) as [repo, language]}
             <a href="https://github.com/{repo}" target="_blank" rel="noreferrer">
-                <img src="https://socialify.git.ci/{repo}/image?description=1&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark" alt={repo} />
+                <img src="https://socialify.git.ci/{repo}/image?description=1&language=1&name=1&owner=1&pattern=Solid&theme=Dark" alt={repo} />
             </a>
         {/each}
     {:else}
         {#each Object.entries(repos) as [repo, language]}
-            {#if language === clang}
+            {#if language.includes(clang)}
                 <a href="https://github.com/{repo}" target="_blank" rel="noreferrer">
-                    <img src="https://socialify.git.ci/{repo}/image?description=1&language=1&name=1&owner=1&pattern=Solid&stargazers=1&theme=Dark" alt={repo} />
+                    <img src="https://socialify.git.ci/{repo}/image?description=1&language=1&name=1&owner=1&pattern=Solid&theme=Dark" alt={repo} />
                 </a>
             {/if}
         {/each}
