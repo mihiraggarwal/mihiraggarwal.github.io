@@ -69,7 +69,7 @@
 
     img {
         border-radius: 50%;
-        width: 12vw;
+        width: 14vw;
         height: auto;
         margin-left: auto;
         margin-right: auto;
